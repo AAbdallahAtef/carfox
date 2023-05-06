@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #2457C5;
+    --secondary-color: #F2F2F2;
+    --gray-color: #D9D9D9;
+    --boarder-color: rgba(36, 87, 197, 0.5);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.containersForSetting{
+    max-width: 1500px;
+    margin: auto;
+  }
+  .Header { 
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Header h1 {
+    margin: 0 16%;
+    font-size: 32px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .Contact_method{
+    width: 31%;
+    height: 117px;
+    padding: 15px;
+    margin-left: 17%; 
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: left;
+  }
+  .Labels{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  display: block;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  }
+  .rlabel {
+    margin-left: 1%;
+    margin-right: 13%;
+  }
+  .Contact_Method_Form{
+  margin-left: 7%;
+  }
+  .Create_Password{
+    width: 31%;
+    height: 370px;
+    padding: 15px;
+    margin-left: 17%; 
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: left;
+  }
+  .Create_Password_Form{
+   margin-left: 25px;
+  }
+  .sub-labels{
+  text-transform: capitalize;
+  color: #4D6CAE;
+  }
+  .Constrains{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .Submit_Button{
+  width: 50%;
+  height: 26px;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-left: 20%;
+  background-color: #467DF3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  }
+  .Upgrade_Your_Account{
+    width: 28%;
+    height: 250px;
+    padding: 15px;
+    margin-right: 22%; 
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    float: right;
+  }
+  .rInput:checked + .rlabel{
+    color: var(--primary-color);
+  }
+  .view_plans_btn{
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  text-decoration: none;
+  }
+  .view_plans_btn:hover{
+    color: mediumorchid;
+  
+  }
+/* @media (max-width: 600px) {
+  .containersForSetting {
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .containersForSetting {
+  }
+} */
+/* For screens larger than 900px */
+@media (max-width: 1275px) {
+  .rlabel{
+    margin-left: 1%;
+    margin-right: 4%;
+    font-size: 16px;
+  }
+  .Contact_Method_Form{
+    margin-left: 4%;
+    }
+   .Submit_Button{
+    font-size: 14px;
+   }
+   
+}
+@media (max-width: 960px) {
+  .rlabel{
+    font-size: 14px;
+  }
+  .Contact_Method_Form{
+    margin-left: 7%;
+    }
+   .Submit_Button{
+    width: 80%;
+    margin-left: 5%;
+   }
+   .Constrains{
+    font-size: 14px;
+   }
+
+}
+@media (max-width: 768px) {
+  .Labels{
+    font-size: 13px;
+    margin-bottom: 11%;
+  }
+  .Constrains{
+    font-size: 10px;
+   }
+  .view_plans_btn{
+    font-size: 15px;
+   }
+  .rlabel{
+    font-size: 11px;
+    margin-right: 4%;
+  }
+  .Contact_method{
+    padding: 2%;
+  }
+  .Contact_Method_Form{
+    margin-left: 6%;
+    }
+  .sub-labels{
+      font-size: 12px;
+    }
+  .Create_Password_Form input{
+      width: 90%;
+    }
+    .Create_Password_Form input::placeholder{
+      color: transparent;
+    }
+  .Create_Password_Form {
+      margin-left: 5%;
+  }
+  .Create_Password{
+    padding: 2%;
+  }
+  .Submit_Button{
+    height: 90%;
+    font-size: 10px;
+   }
+  .Upgrade_Your_Account{
+    margin-right: 17%;
+    padding: 2%;
+  }
+}
+@media (max-width: 360px) {
+  .Labels{
+    font-size: 8px;
+    margin-bottom: 9px;
+  }
+  .Constrains{
+    font-size: 8px;
+   }
+  .view_plans_btn{
+    font-size: 11px;
+   }
+  .rlabel{
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  .Contact_Method_Form{
+    margin-left: 4%;
+    }
+  .sub-labels{
+      font-size: 9px;
+    }
+  .Create_Password_Form input{
+      width: 90%;
+    }
+    .Create_Password_Form input::placeholder{
+      color: transparent;
+    }
+  .Create_Password_Form {
+      margin-left: 6px;
+  }
+  .Create_Password{
+    padding: 7px;
+  }
+  .Submit_Button{
+    height: 90%;
+    font-size: 10px;
+   }
+  .Upgrade_Your_Account{
+    margin-right: 17%;
+    padding: 9px;
+  }
+}

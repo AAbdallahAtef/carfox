@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #2457C5;
+    --secondary-color: #F2F2F2;
+    --gray-color: #D9D9D9;
+    --boarder-color: rgba(36, 87, 197, 0.5);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+  ::-webkit-scrollbar{
+    width: 17px;
+    
+  }
+  ::-webkit-scrollbar-track{
+    background-color:var(--secondary-color);
+    }
+  ::-webkit-scrollbar-thumb{
+    background-color: #4164B0;
+    border-radius: 10px;
+  }
+  /*.leftMenu{
+  position:relative;
+  width: 236px;
+  height: 924px;
+  left: 0px;
+  top: 98px;
+  background: #F2F2F2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  
+  }
+  .leftUser{
+  position: absolute;
+  width: 111.2px;
+  height: 111.2px;
+  left: 62px; 
+  top: 72px;
+  border: 1px solid #2457C5;
+  border-radius: 70px;
+  }
+  .userName{
+  
+    position: absolute;
+    width: 135px;
+    height: 23px;
+    left: 70px;
+    top: 191px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #000000; 
+  }*/
+   .containersForProduct{
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .Header { 
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Header h1 {
+    margin: 0 16%;
+    font-size: 32px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: #2457C5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /* @media  (max-width: 1300px){
+    .Header h1{
+      margin-left: 25%;
+    }
+  }
+  @media  (max-width: 960px){
+    .Header h1{
+      margin-left: 20%;
+    }
+  } */
+  .Header a{
+    padding: 9px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(245, 245, 245, 0.35);
+    width:17%;
+    height: 40px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 87px;
+    color: #2457C5;
+  }
+  /* @media  (max-width: 1300px){
+    .Header a{
+      margin-left: 675px;
+      width: 15%;
+    }
+  }
+  @media  (max-width: 960px){
+    .Header a{
+      margin-left: 660px;
+      width: 200px;
+      height: 1%;
+      font-size: 15px;
+    }
+  } */
+  .Container{
+    height: 550px;
+    padding: 20px;
+    margin-left: 17%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  
+  /* @media (max-width: 960px) {
+    container {
+        width: 70%;
+        margin-left: 20%;
+    }
+  } */
+  .prod_no{
+    color:#2457C5;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+  
+  }
+  .prod_no span{
+    color: #C92323;
+  }
+  .inside_Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    justify-content: center;
+    gap: 46px 88px;
+    
+  }
+  
+  .Card {
+    background-color: white;
+    padding: 24px 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+    gap: 17.5px;
+    border: 1px solid var(--boarder-color);
+    width: 90%;
+  }
+  
+  .Card img{
+    width: 95%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--boarder-color);
+  }
+  .Card_body{
+    
+    border: 1px solid var(--boarder-color);
+    width: 95%;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .Card-title{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 10px;
+  text-align: left;
+  }
+  .Details{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    font-size: 12px;
+    font-weight:400 ;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: left;
+  
+  }
+  .left-details{
+    padding: 0px 10px;
+  }
+  
+  .right-details{
+   margin-right: 8px;
+  }
+  .Details p{
+    padding-bottom: 4px;
+  }
+  .edit_btn{
+    display: inline-block;
+    padding: 3px 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 9px;
+    margin-bottom: 13px;
+    width: 90%;
+    height: 17px;
+    background-color: var(--boarder-color);
+    border: 1px solid rgba(245, 245, 245, 0.35);
+  }
+  @media only screen and (max-width: 1286px){
+    .inside_Container{
+      grid-template-columns: repeat(auto-fill, minmax(205px, auto));
+      gap: 49px 12px;
+    }
+    .Header h1 {
+      font-size: 30px;
+    }
+    
+    .Header a {
+      padding: 10px 19px;
+      font-size: 17px;
+    }
+    
+    .prod_no {
+      font-size: 14px;
+    }
+    .right-details{
+      margin-right: 6px;
+     }
+  }
+  @media only screen and (max-width: 1150px){
+    .inside_Container{
+      grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+    }
+    .Header h1 {
+      font-size: 27px;
+    }
+    
+    .Header a {
+      padding: 12px 13px;
+      font-size: 15px;
+    }
+    
+    .prod_no {
+      font-size: 14px;
+    }
+    .Details{
+      font-size: 10px;
+    }
+  
+  }
+  @media only screen and (max-width: 960px){
+    .inside_Container{
+      grid-template-columns: repeat(auto-fill, minmax(143px, auto));
+    }
+    .Header h1 {
+      font-size: 24px;
+    }
+    
+    .Header a {
+      font-size: 13px;
+      padding: 12px 7px;
+    }
+    
+    .prod_no {
+      font-size: 12px;
+    }
+    .Details{
+      font-size: 7px;
+    
+    }
+    
+  }
+  
+  
+  @media only screen and (max-width: 768px){
+    .inside_Container{
+      grid-template-columns: repeat(auto-fill, minmax(144px, auto));
+    }
+    .Header h1 {
+      font-size: 20px;
+    }
+    
+    .Header a {
+      padding: 14px 4px;
+      font-size: 10px;
+    }
+    
+    .prod_no {
+      font-size: 11px;
+    }
+    .Details{
+      font-size: 8px;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .inside_Container{
+      grid-template-columns: repeat(auto-fill, minmax(165px, auto));
+    }
+    .Header h1 {
+      font-size: 20px;
+    }
+    
+  
+    .Header a {
+    padding: 17px 2px;
+    font-size: 6px;
+    }
+    
+    .prod_no {
+      font-size: 15px;
+    }
+    .Details{
+      font-size: 13px;
+    
+    }
+  }

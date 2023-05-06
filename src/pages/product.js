@@ -1,11 +1,11 @@
 import React from "react"
 import ProductItem from "../Component/productItem"
-import '../App.css'
+import '../Style/Product.css'
 
 export default function Products() {
      
     return (
-        <div>
+        <div className="containersForProduct"> 
             <div className="Header">
                 <h1>Products</h1>
                 <a href="#">+ Add Product</a>
