@@ -1,4 +1,4 @@
-import React, { Component }  from "react";
+import React from "react";
 import { Formik, Field } from "formik";
 
 export default function upgradeYourAccount() {

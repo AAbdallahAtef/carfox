@@ -8,7 +8,6 @@ export default function CreatePasswordForm(props) {
             <div className="Create_Password_Form">
                 <label className="sub-labels">new Password</label>
                 <br />
-                <br />
                 <Field name="newPassword" type= "Password" placeholder="  New Password"/>
                 <br />
                 <ErrorMessage className="Error-Message" name='newPassword' />
@@ -16,7 +15,6 @@ export default function CreatePasswordForm(props) {
                 <p className="Constrains"><br/>Use minimum 6 characters, and at least one letter <br/>and one number</p>  
                 <br />  
                 <label className="sub-labels">confirm new Password</label>
-                <br />
                 <br />
                 <Field name="confirmNewPassword" type = "Password" placeholder="  Confirm New Password"/>
                 <br />

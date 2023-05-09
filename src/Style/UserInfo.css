@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+ }
+.pages {
+    display: flex; 
+    width: 236px;
+    height: 59px;
+    background: #F2F2F2;
+    border-top: 1px solid #000000;
+    flex-basis: 25%;
+  }
+.icons{
+display: flex;
+flex-basis: 4%;
+font-size: 20px;
+}

@@ -1,135 +1,14 @@
-:root {
-    --primary-color: #2457C5;
-    --secondary-color: #F2F2F2;
-    --gray-color: #D9D9D9;
-    --boarder-color: rgba(36, 87, 197, 0.5);
-  }
-  
-  * {
-    box-sizing: border-box;
-    font-family: 'Raleway';
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-  }
-  ::-webkit-scrollbar{
-    width: 17px;
-    
-  }
-  ::-webkit-scrollbar-track{
-    background-color:var(--secondary-color);
-    }
-  ::-webkit-scrollbar-thumb{
-    background-color: #4164B0;
-    border-radius: 10px;
-  }
-  /*.leftMenu{
-  position:relative;
-  width: 236px;
-  height: 924px;
-  left: 0px;
-  top: 98px;
-  background: #F2F2F2;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  
-  }
-  .leftUser{
-  position: absolute;
-  width: 111.2px;
-  height: 111.2px;
-  left: 62px; 
-  top: 72px;
-  border: 1px solid #2457C5;
-  border-radius: 70px;
-  }
-  .userName{
-  
-    position: absolute;
-    width: 135px;
-    height: 23px;
-    left: 70px;
-    top: 191px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-transform: capitalize;
-    color: #000000; 
-  }*/
-   .containersForProduct{
-    width: 80%;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-  .Header { 
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-  }
-  
-  .Header h1 {
-    margin: 0 16%;
-    font-size: 32px;
-    text-transform: capitalize;
-    letter-spacing: 1.5px;
-    color: #2457C5;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  /* @media  (max-width: 1300px){
-    .Header h1{
-      margin-left: 25%;
-    }
-  }
-  @media  (max-width: 960px){
-    .Header h1{
-      margin-left: 20%;
-    }
-  } */
-  .Header a{
-    padding: 9px 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    background-color: var(--secondary-color);
-    border: 1px solid rgba(245, 245, 245, 0.35);
-    width:17%;
-    height: 40px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 87px;
-    color: #2457C5;
-  }
-  /* @media  (max-width: 1300px){
-    .Header a{
-      margin-left: 675px;
-      width: 15%;
-    }
-  }
-  @media  (max-width: 960px){
-    .Header a{
-      margin-left: 660px;
-      width: 200px;
-      height: 1%;
-      font-size: 15px;
-    }
-  } */
+
   .Container{
     height: 550px;
     padding: 20px;
-    margin-left: 17%;
+    margin-left: 3%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--secondary-color);
     overflow: hidden;
     overflow-y: scroll;
   }
-  
-  /* @media (max-width: 960px) {
-    container {
-        width: 70%;
-        margin-left: 20%;
-    }
-  } */
+
   .prod_no{
     color:#2457C5;
     font-weight: bold;
@@ -139,6 +18,7 @@
   }
   .prod_no span{
     color: #C92323;
+    padding:0 6px;
   }
   .inside_Container {
     display: grid;
@@ -184,7 +64,7 @@
   }
   .Details{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-content: flex-start;
     font-size: 12px;
     font-weight:400 ;
@@ -195,6 +75,7 @@
   }
   .left-details{
     padding: 0px 10px;
+    border-right: 1px solid grey;
   }
   
   .right-details{
@@ -218,7 +99,7 @@
   }
   @media only screen and (max-width: 1286px){
     .inside_Container{
-      grid-template-columns: repeat(auto-fill, minmax(205px, auto));
+      grid-template-columns: repeat(auto-fill, minmax(227px, auto));
       gap: 49px 12px;
     }
     .Header h1 {
@@ -239,7 +120,7 @@
   }
   @media only screen and (max-width: 1150px){
     .inside_Container{
-      grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
     }
     .Header h1 {
       font-size: 27px;
@@ -260,7 +141,7 @@
   }
   @media only screen and (max-width: 960px){
     .inside_Container{
-      grid-template-columns: repeat(auto-fill, minmax(143px, auto));
+      grid-template-columns: repeat(auto-fill, minmax(163px, auto));
     }
     .Header h1 {
       font-size: 24px;

@@ -1,15 +1,32 @@
 import React, { Component } from 'react';
-import Products from './pages/product';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "./App.css"
+import UserInfo from "./pages/UserInfo"
+import Favourites from "./pages/Favourites"
 import Settings from "./pages/Settings"
-import * as Yup from "yup"; 
-// import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import Notification from "./pages/Notification"
+import Products from './pages/product';
+import Chat from "./pages/Chat"
+import Sidebar from "./Component/Sidebar"
 class App extends Component {
   
   render() {
     return (
       <div className="App">
-        {/* <Products/> */}
-        <Settings/>
+        <BrowserRouter>
+          <Sidebar>
+            <Routes>
+              <Route path="/" element={<UserInfo />} />
+              <Route path="/UserInfo" element={<UserInfo />} />
+              <Route path="/Favourites" element={<Favourites />} />
+              <Route path="/Settings" element={<Settings /> } />
+              <Route path="/Notification" element={<Notification />} />
+              <Route path="/Products" element={<Products />} />
+              <Route path="/Chats" element={<Chat />} />
+              <Route path="/LogOut" element={<Products />} />
+            </Routes>
+          </Sidebar>
+        </BrowserRouter>
       </div>
     )
   };

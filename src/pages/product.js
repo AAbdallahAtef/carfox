@@ -11,7 +11,7 @@ export default function Products() {
                 <a href="#">+ Add Product</a>
             </div>
             <div className="Container"> 
-            <p className="prod_no">you have <span>6</span> products</p><br/>
+            <p className="prod_no">you have<span> 6 </span>products</p><br/>
             <div className="inside_Container">
                 <div className="for scrool"><ProductItem /></div>
                 <div className="for scrool"><ProductItem /></div>
