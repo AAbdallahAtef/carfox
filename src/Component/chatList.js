@@ -74,8 +74,8 @@ export default function chatList() {
                 {
                     allChatUser.map((item, index)=>(
                         <div key={index} className="incomingMessage" activeclassName="active">
-                            <div className="name_and_message">
-                                <img src={item.pic} alt="user Image" className="pic" />
+                            <div className="name_and_Pic">
+                                <img src={item.pic} alt="user " className="pic" />
                                 <div className="item_name">{item.name}</div>
                             </div>
                             <div className="time">{item.time}</div>

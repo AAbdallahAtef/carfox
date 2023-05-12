@@ -10,6 +10,7 @@ body{
     margin-top: 3%;
     background-color: var(--secondary-color);
     border-radius: 0px 42px 42px 0px;
+    transition: all 0.5s;
 }
 .chatList{
     width:250px;
@@ -17,6 +18,7 @@ body{
     border-right: 2px solid var(--primary-color) ;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s;
 }
 .topDiv{
     display: flex;
@@ -42,6 +44,7 @@ body{
     overflow-y: scroll;
     transition: all 0.5s;
 }
+
 .incomingMessage{
     background-color: white;
     width: 95%;
@@ -51,6 +54,14 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.incomingMessage:hover{
+    cursor: pointer;
+}
+.name_and_Pic{
+    display: flex;
+    align-items: center;
+    width: 130px;
     transition: all 0.5s;
 }
 .pic{
@@ -59,13 +70,9 @@ body{
     border: 1px solid var(--primary-color);
     border-radius: 50%; 
 }
-.name_and_message{
-    display: flex;
-    align-items: center;
-    width: 130px;
-}
 .item_name{
     margin-left:3px ;
+    transition: all 0.5s;
 }
 .time{
     justify-self: end;
@@ -79,25 +86,29 @@ body{
 }
 .chatHeader{
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
     flex-direction: row;
     background-color: var(--secondary-color);
     border-radius: 0px 42px 0px 0px;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 10vh;    
+    transition: all 0.5s;
 }
 .img_Name_LS{
-    width: 28%;
+    width: 18vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.5s;
 }
 .userImage{
-    width: 50px;
-    height: 50px;
+    width: 4vw;
+    height: 8vh;
     border-radius: 50%;
+    margin-right: 15px;    
+    transition: all 0.5s;
 }
 .Name_LS{
     display: flex;
@@ -126,7 +137,6 @@ body{
     float: right;
     background: var(--primary-color);
     border-radius: 18px 25px 0 18px;
-    transition: all 0.5s;
 }
 .Other{
     float: left;
@@ -134,6 +144,7 @@ body{
     border-radius: 18px 25px 18px 0;
 }
 .Me, .Other{
+    font-size: larger;
     min-width: 190px;
     width: auto;
     height: auto;
@@ -143,6 +154,7 @@ body{
     margin: 3px 5px;
     overflow: hidden;
     justify-content: center;
+    transition: all 0.5s;
 }
 .chatFooter{
     height: 10vh;
@@ -181,3 +193,78 @@ body{
     border-radius: 15px;
     background-color: var(--primary-color);
 }
+@media only screen and (max-width: 1286px){
+    .userImage{
+        height: 6vh;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .containersForChat{
+        margin-left: 3%;
+        width: 95%;
+    }
+}
+@media only screen and (max-width : 960px) {
+    .img_Name_LS{
+        width: 27vw;
+    }
+    .userImage{
+        width: 7vw;
+        height: 5vh;
+    }
+}
+@media only screen and (max-width: 540px){
+    .chatList{
+        width: 110px;
+    }
+    .chatItemList{
+        grid-template-columns: repeat(auto-fill, minmax(90px, auto));
+    }
+    .name_and_Pic{
+        width: inherit;
+    }
+    .item_name {
+        display:none ;
+    }
+    .img_Name_LS {
+        width: 38vw;
+    }
+    .userImage{
+        width: 10vw;
+        height: 5vh;
+    }
+} 
+@media only screen and (max-width: 376px){
+
+    .containersForChat{
+        margin-left: 2%;
+        width: 74%;
+    }
+    .chatHeader{
+        padding: 0 6px;
+    }
+    .chatList {
+        width: 103px;
+    }
+    .chatItemList {
+        grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+    }
+    .img_Name_LS{
+        width: 55vw;
+        font-size: 9px;
+    
+    }
+    .userImage{
+        width: 8vw;
+        height: 4vh;
+    }
+    
+    .Me, .Other{
+        font-size: smaller;
+        min-width: 90px;
+    }
+    .sendText::placeholder{
+        color: transparent;
+    }
+}
+
