@@ -9,6 +9,7 @@
   padding:0;
   text-decoration: none;
   box-sizing: border-box;
+  border-radius: 5px ;
   font-family: 'Raleway';
   line-height: 1;
 }

@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color:  blue;
-}
+} */
 .containersForChat{
     display: flex;
     flex-direction: row;   

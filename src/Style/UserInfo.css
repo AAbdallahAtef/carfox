@@ -1,16 +1,285 @@
-*{
-    box-sizing: border-box;
- }
-.pages {
-    display: flex; 
-    width: 236px;
-    height: 59px;
-    background: #F2F2F2;
-    border-top: 1px solid #000000;
-    flex-basis: 25%;
+.containersForUserInfo{
+  display: flex;
+  flex-direction: row;   
+  width: 100%;
+  height: 90vh;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+.containersForUserInfo p{
+  text-transform: capitalize;
+}
+.leftContent, .rightContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contactButton, .passwordButton, .lightMode, .darkMode{
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  border: none;
+  background-color: #467DF3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.details input, .secondHalf input{
+  border: none;
+  outline: none;
+  border-radius: 0%;
+  width: 12vw;
+  transition: all 0.5s;
+}
+
+.leftContent{
+  align-items: center;
+  width: 15%;
+}
+.userHeader h1{
+  font-size: 32px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  color: var(--primary-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+.photo, .help{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width:-webkit-fill-available ;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+.photo{
+  height: 25vh;
+}
+.Label{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.imgAndIcon img{
+  width: 5vw;
+  height: 9vh;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.editIcon{
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  margin-left: -20px;
+  cursor: pointer;
+}
+.help{
+  height: 45vh;
+}
+.contactIcon{
+  font-size: 80px;
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+.help p{
+  max-width: 80%;
+}
+.contactButton{
+  width: 80%;
+  height: 26px;
+}
+.rightContent{
+  width: 70%;
+}
+.completeOne, .firstHalf, .secondHalf{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left:20px;
+  height: 15vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+.containers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.firstHalf{
+  width: 30vw;
+}
+.secondHalf{
+  width: 24vw;
+}
+.verifyForm{
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 4vh;
+  justify-content: space-between;
+  transition: all 0.5s; 
+}
+.verifySlider{
+  -webkit-appearance: none;
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 90%;
+}
+.sub-label{
+  text-transform: capitalize;
+  color: #4D6CAE;
+  transition: all 0.5s;
   }
-.icons{
-display: flex;
-flex-basis: 4%;
-font-size: 20px;
+.userForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 8vh;
+  transition: all 0.5s;
+}
+.buttonDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.passwordButton, .lightMode, .darkMode{
+  width: 40%;
+  height: 5vh;
+}
+.lightMode{
+  color: #000;
+  background-color:#FDFDFD;  
+}
+.darkMode{
+  color: #FFFFFF;
+  background-color:#000;  
+}
+
+@media only screen and (max-width: 1024px){
+  .userHeader h1{
+    font-size: 27px;
+  }
+  .passwordButton, .lightMode, .darkMode{
+    height: 7vh;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contactButton, .passwordButton, .lightMode, .darkMode{
+    font-size: 13px;
+  }
+  .details input, .secondHalf input{
+    width: 13vw;
+    font-size: 16px;
+  }
+  .containersForUserInfo{
+    width: 117%;
+  }
+  .userHeader h1{
+    font-size: 20px;
+  }
+  .photo{
+    height: 20vh;
+  }
+  .imgAndIcon img{
+    width: 8vw;
+    height: 6vh;
+  }
+  .contactButton {
+    width: 83%;
+    height: 3vh;
+    font-size: 14px;
+  }
+  .Label{
+    font-size: 18px;
+  }
+  .details{
+    font-size: 20px;
+  }
+  .secondHalf{
+    width: 33vw;
+  }
+}
+@media only screen and ((max-width: 540px)){
+  .contactButton, .passwordButton, .lightMode, .darkMode{
+    padding: 0;
+  }
+  .details input, .secondHalf input{
+    width: 11vw;
+  }
+  .containersForUserInfo{
+    width: 109%;
+  }
+  .help p{
+    font-size: 13px;
+  }
+  .contactIcon{
+    font-size: 40px;  
+  }
+  .contactButton{
+    font-size: 12px;
+  }
+  .completeOne, .firstHalf, .secondHalf{
+    padding-left: 3px;
+  }
+  .firstHalf{
+    width:25vw;
+  }
+  .sub-label{
+    font-size: 12px;
+  }
+  .details input::placeholder, .secondHalf input::placeholder{
+    color: transparent;
+  } 
+  .passwordButton, .lightMode, .darkMode{
+    width:11vw;
+    font-size: 9px;  
+  } 
+}
+@media only screen and ((max-width: 376px)){
+  .details input, .secondHalf input{
+    width: 7vw;
+  }
+  .containersForUserInfo{
+    width: 103%;
+  }
+  .userHeader h1 {
+    font-size: 15px;
+  }
+  .help p{
+    font-size: 8px;
+  }
+  .contactIcon{
+    font-size: 20px;  
+  }
+  .contactButton{
+    font-size: 7px;
+  }
+  .Label{
+    font-size: 8px;
+  }
+  .sub-label{
+    font-size: 8px;
+  }
+  .verifyForm p{
+    font-size: 10px;
+  }
+  .secondHalf{
+    width: 28vw;
+  }
+  .passwordButton, .lightMode, .darkMode{
+    font-size: 7px;
+  } 
 }
