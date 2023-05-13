@@ -13,6 +13,9 @@
   font-family: 'Raleway';
   line-height: 1;
 }
+body{
+  background-color:blue ;
+}
 ::-webkit-scrollbar{
   width: 17px;
 }
