@@ -1,0 +1,71 @@
+.containersForNotification{
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+    height: 90vh;
+    transition: all 0.5s;
+}
+.notifySetting{
+    margin: 4%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+    padding: 0 2%;
+    transition: all 0.5s
+}
+
+.component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+hr{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.labelAndDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.componentLabel{
+font-weight: 500;
+font-size: 20px;
+color: var(--primary-color);
+margin-bottom: 2% ;
+transition: all 0.5s;
+}
+.describtion{
+font-weight: 500;
+font-size: 13px;
+text-transform: capitalize;
+opacity: 0.5;
+transition: all 0.5s;
+}
+@media only screen and (max-width: 960px){
+    .componentLabel{
+        font-size: 22px;
+    }
+    .describtion{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width: 540px){
+    .componentLabel{
+        font-size: 14px;
+    }
+    .describtion{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .componentLabel{
+        font-size: 10px;
+    }
+    .describtion{
+        font-size: 8px;
+    }
+}
