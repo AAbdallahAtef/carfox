@@ -1,0 +1,139 @@
+body{
+    background-color:white ;
+  }
+.containersForFav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.favHeader{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 70vw;
+
+}
+.favHeader h1{
+    font-size: 32px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.favHeader a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(245, 245, 245, 0.35);
+    width:12vw;
+    height: 40px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 87px;
+    color: var(--primary-color);
+    align-items: center;
+}
+.favouriteSetting{
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tableItems{
+    height: 65vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(8vh, auto));
+    gap: 25px;
+
+}
+.tapleHeaders, .itemDetails{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0 5px 0;
+}
+.tapleHeaders{
+    padding-right: 17px;
+    border-radius: 42px 42px 0 0 ;
+}
+.favPhoto, .name, .type, .deleteAndView, .deleteAndViewLinks{
+    border-radius: 0 0 0 0 ;
+    border-right: 1px solid black;     
+}
+.favPhoto, .name, .type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 6vh;
+    text-transform: capitalize;
+}
+.deleteAndView,.deleteAndViewLinks, .addTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 6vh;
+    text-transform: capitalize;
+}
+.favPhoto img{
+    height: 6vh;
+    width: 8vw;
+    border-radius: 0;
+}
+.deleteAndViewLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 870px){
+    .favHeader a{
+        font-size: 14px;
+    }
+    .favPhoto, .name, .type,.deleteAndView,.deleteAndViewLinks a, .addTime{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .favHeader a{
+        font-size: 12px;
+        width: 18vw;
+    }
+    .deleteAndViewLinks {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .favPhoto, .name, .type,.deleteAndView,.deleteAndViewLinks a, .addTime{
+        font-size: 13px;
+    }
+    .favPhoto img{
+        height: 5vh;
+        width: 7vw; 
+    }
+}
+@media only screen and (max-width: 280px){
+    .favHeader{
+        flex-direction: column;
+    }
+    .favHeader a{
+        font-size: 15px;
+        width: 50vw;
+    }
+    .favPhoto, .name, .type,.deleteAndView,.deleteAndViewLinks a, .addTime{
+        font-size: 8px;
+    }
+    .favPhoto img{
+        height: 4vh;
+        width: 6vw;
+    }
+    .tapleHeaders{
+        border-radius: 19px 19px 0 0; 
+    }
+}
