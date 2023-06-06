@@ -13,7 +13,7 @@ body{
     align-items: center;
     display: flex;
     width: 70vw;
-
+    transition: all 0.5s;
 }
 .favHeader h1{
     font-size: 32px;
@@ -23,6 +23,7 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .favHeader a{
+    transition: all 0.5s;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -62,6 +63,7 @@ body{
 .tapleHeaders{
     padding-right: 17px;
     border-radius: 42px 42px 0 0 ;
+    transition: all 0.5s;
 }
 .favPhoto, .name, .type, .deleteAndView, .deleteAndViewLinks{
     border-radius: 0 0 0 0 ;
@@ -74,6 +76,7 @@ body{
     width: 10vw;
     height: 6vh;
     text-transform: capitalize;
+    transition: all 0.5s;
 }
 .deleteAndView,.deleteAndViewLinks, .addTime{
     display: flex;
@@ -82,11 +85,13 @@ body{
     width: 20vw;
     height: 6vh;
     text-transform: capitalize;
+    transition: all 0.5s;
 }
 .favPhoto img{
     height: 6vh;
     width: 8vw;
     border-radius: 0;
+    transition: all 0.5s;
 }
 .deleteAndViewLinks{
     display: flex;

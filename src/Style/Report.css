@@ -1,0 +1,123 @@
+.ReportLabel{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+.reportForm{
+    display: flex;
+    justify-content: center;
+}
+.reportForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-items: center;
+    background-color:  var(--secondary-color);
+    width: 50vw;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+.interiorField,.reportDetails,.theReport{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.reportDetails{
+    height:9vh;
+    transition: all 0.5s;
+}
+.interiorField{
+    height: 60vh;
+}
+.theReport{
+    height: 14vh;
+    transition: all 0.5s;
+}
+.Sbutton{
+    height: 4vh;
+    font-size: 18px;
+    color: white;
+    background-color: var(--primary-color);
+}
+@media only screen and (max-width: 912px){
+    .containersForReport h1{
+        font-size: 50px;
+    }
+    .ReportLabel{
+        font-size: 35px;
+    }
+    .reportDetails label,.theReport label{
+        font-size: 30px;
+    }
+    .reportDetails input,.theReport input{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .containersForReport h1{
+        font-size: 35px;
+    }
+    
+    .ReportLabel{
+        font-size: 25px;
+    }
+    .interiorField{
+        width:  40vw;
+    }
+    .reportDetails label,.theReport label{
+        font-size: 20px;
+    }
+    .reportDetails input,.theReport input{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 391px){
+    .containersForReport h1{
+        font-size: 30px;
+    }
+    
+    .ReportLabel{
+        font-size: 21px;
+    }
+    .reportForm form{
+        height: 85vh;
+    }
+    .interiorField{
+        height:  70vh;
+    }
+    .reportDetails label,.theReport label{
+        font-size: 18px;
+    }
+    .reportDetails input,.theReport input{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .containersForReport h1{
+        font-size: 25px;
+    }
+    
+    .ReportLabel{
+        font-size: 17px;
+    }
+    .interiorField{
+        height:  77vh;
+    }
+    .reportDetails label,.theReport label{
+        font-size: 14px;
+    }
+    .reportDetails input,.theReport input{
+        font-size: 13px;
+    }
+    .theReport input{
+        height: 16vh;
+    }
+    .theReport{
+        height: 16vh;
+    }
+}
