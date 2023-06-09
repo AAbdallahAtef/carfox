@@ -9,13 +9,15 @@ import Products from './pages/product';
 import Chat from "./pages/Chat"
 import Sidebar from "./Component/Sidebar"
 import Report from "./pages/Report"
+import PicAndSlider from "./Component/picAndSlider"
+import ViewProduct from './pages/ViewProduct';
 class App extends Component {
   
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
-          {/* <Sidebar>
+        {/* <BrowserRouter>
+          <Sidebar>
             <Routes>
               <Route path="/" element={<UserInfo />} />
               <Route path="/UserInfo" element={<UserInfo />} />
@@ -26,9 +28,13 @@ class App extends Component {
               <Route path="/Chats" element={<Chat />} />
               <Route path="/LogOut" element={<Products />} />
             </Routes>
-          </Sidebar> */}
-          <Report/>
+          </Sidebar>
+
+         
         </BrowserRouter>
+        <Report/>
+          <PicAndSlider/> */}
+        <ViewProduct/>
       </div>
     )
   };

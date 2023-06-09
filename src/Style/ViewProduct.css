@@ -1,0 +1,684 @@
+/* the outer design */
+
+body{
+  background-color: white;
+}
+.viewProductContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.leftDivContainer, .rightDivContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25vw;
+  height: 95vh;
+  transition: all 0.5s;
+}
+.rightDivContainer{
+  width: 40vw;
+}
+
+/* first div design */
+
+.picWithSlider{
+  height: 45vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom:3px solid var(--primary-color) ;
+}
+.nameNumberImg {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 26vh;
+  justify-content: space-between;
+}
+.nameAndNumber{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+.choosedImg{
+  height: 18vh;
+  width: 19vw;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+.allImages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20vw;
+  overflow-x: scroll;
+  transition: all 0.5s;
+  }
+.thumbnail{
+  padding-left: 20px;
+}
+.thumbnail img{
+  height: 7vh;
+  width: 8vw;
+}
+.clicked{
+  border: 5px solid var(--primary-color);
+}
+
+/* second div design */
+
+.relatedItems{
+  color: var(--primary-color);
+  height: 45vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom:3px solid var(--primary-color) ;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.PicAndDetails{
+  border: 1px solid rgba(36, 87, 197, 0.5);
+  background-color: white ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 35vh;
+  width: 20vw;
+  border-radius: 0px;
+  align-items: center;
+  transition: all 0.5s;
+}
+.relatedItemCar{
+  height: 22vh;
+  width: 18vw;
+  border-radius: 0px;
+  transition: all 0.5s;
+}
+.middleDiv, .nameAndSuv, .rate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+.middleDiv{
+  width: 18vw;
+}
+.nameAndSuv{
+  width: 10.5vw;
+  color: #0066ff;
+  align-items: center;
+}
+.nameAndSuv button{
+  font-weight: 700;
+  color:var(--primary-color);
+  width: 2.6vw;
+  height: 3vh;
+  background-color: rgba(36, 87, 197, 0.31);
+  border-radius: 26px;
+  border: 1px solid #0066ff;
+  font-size: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.rate{
+  width: 4.5vw;
+}
+.rate div{
+  border-radius: 2px;
+  font-size: 11px;
+  color: white;
+  background-color: #5CBD6B;
+  padding: 1px;
+  transition: all 0.5s;
+}
+.rate h4{
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.moreButton{
+  text-transform: capitalize;
+  color: white;
+  align-self: center;
+  background-color: #0066ff;
+  width: 13vw;
+  height: 3vh;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.5s;
+}
+
+/* third div design */
+
+.carDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+  height: 35vh;
+  align-items: center;
+  border-bottom:3px solid var(--primary-color) ;
+}
+.smallDetailsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+  width: 15vw;
+  transition: all 0.5s;
+}
+.smallDetailsContainer h3{
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+.Stars, .review{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+.Stars{
+  color: gold;
+}
+.Stars p{
+  color: #27FF7D;
+}
+.review p{
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.wishButton, .contactBtn{
+  border-radius: 74px;
+  text-transform: capitalize;
+  height: 2.3vh;
+  transition: all 0.5s;
+}
+.wishButton{
+  background-color: #0066FF;
+  color: white;
+  border: none;
+}
+.price{
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.contactBtn{
+  color: #0066ff;
+  background-color: white;
+  border: 1px solid #0066FF;
+}
+
+/* forth div design */
+
+.containerForTapsItem{
+  color: var(--primary-color);
+  height: 53vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom:3px solid var(--primary-color) ;
+  text-transform: capitalize;
+  align-items: flex-end;
+}
+.tapsItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+.tap{
+  border-radius: 0%;
+  border-bottom:3px solid white ;
+  width: 13.3vw;
+  transition: all 0.5s;
+  padding: 0 0 5px 5px;
+ }
+.tap_text{
+  color: var(--primary-color);
+  font-size: 24px;
+  transition: all 0.5s;
+ }
+a.tap.active{
+  font-weight: 700;
+  border-bottom:3px solid var(--primary-color) ;
+}
+
+/* description tap sector */
+
+.descriptonTapsContainer{
+  text-align: right;
+  height: 40vh;
+  padding-right: 5px;
+  font-size: 28px;  
+  color: #000;
+  transition: all 0.5s;
+}
+
+/* details tap sector */
+
+.detailsTapsContainer, .sellerInfoTapsContainer{
+  height: 40vh;
+  transition: all 0.5s;
+}
+.detailsTapsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+.leftDetailsContainer,.rightDetailsContainer{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+font-size: 20px;
+transition: all 0.5s;
+}
+.leftDetailsContainer{
+  border-right:1px solid rgba(36, 87, 197, 0.5) ;
+  width: 15vw;
+  border-radius: 0%;
+}
+.leftDetailsContainer div, .rightDetailsContainer div{
+color: #000 ;
+}
+.leftDetailsContainer span, .rightDetailsContainer span{
+  color: var(--primary-color) ;
+  }
+.transmission{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18vw;
+  transition: all 0.5s;
+}
+.transmissionType{
+  display: flex;
+  flex-direction: row;
+}
+.transmissionType input{
+  margin-right:5px ;
+}
+.transmissionType p{
+  color: var(--primary-color);
+}
+
+/* seller Info tap sector */
+
+.sellerInfoTapsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:40vw;
+  transition: all 0.5s;
+}
+.leftSellerDetailsContainer, .rightSellerDetailsContainer, .sellerContactInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+.leftSellerDetailsContainer{
+  height: 40vh;
+  align-items: center;
+  border-right: 1px solid var(--primary-color);
+  width: 10vw;
+  border-radius: 0%;
+  color: #000;
+}
+.leftSellerDetailsContainer img{
+  height: 11vh;
+  width: 6vw;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.rightSellerDetailsContainer{
+  width: 28vw;
+  height: 30vh;
+}
+.sellerContactInfo{
+  height: 12vh;
+  justify-content: space-between;
+}
+.sellerContactInfo span{
+  color: #000;
+}
+/* responsive styling */
+@media only screen and (max-width: 1024px){
+  .PicAndDetails{
+    width: 22vw;
+  }
+  .relatedItemCar{
+    width: 20vw;
+  }
+  .middleDiv{
+    width: 20vw;
+  }
+  .nameAndSuv{
+    width: 12.5vw;
+  }
+  .rate{
+    width: 5.5vw;
+  }
+}
+@media only screen and (max-width: 912px){
+  .Stars{
+    width: 20vw;
+  }
+  .review{
+    font-size: 20px;
+  }
+  .wishButton, .contactBtn{
+    height: 3vh;
+    font-size: 16px;
+  }
+  .PicAndDetails{
+    width: 23vw;
+  }
+  .relatedItemCar{
+    width: 21vw;
+  }
+  .middleDiv{
+    width: 21vw;
+  }
+  .nameAndSuv{
+    width: 13.5vw;
+  }
+  .nameAndSuv button{
+    width: 2.8vw;
+    height: 2vh;
+  }
+  .rate{
+    width: 6.5vw;
+  }
+  .rate div{
+    font-size: 15px;
+  }
+  .leftDetailsContainer, .rightDetailsContainer{
+    font-size: 16px;
+  }
+  .leftSellerDetailsContainer img {
+    height: 5vh;
+    width: 7vw;
+  }
+  .leftSellerDetailsContainer{
+    width: 13vw;
+  }
+  .rightSellerDetailsContainer {
+    width: 26vw;
+}
+}
+@media only screen and (max-width: 820px){
+  .leftDivContainer, .rightDivContainer{
+    width: 45vw;
+  }
+  .choosedImg, .allImages {
+    width: 35vw;
+  }
+  .PicAndDetails{
+    width: 37vw;
+  }
+  .relatedItemCar, .middleDiv{
+    width: 32vw;
+  }
+
+  .nameAndSuv{
+    width: 18.5vw;
+  }
+  .nameAndSuv button{
+    width: 5.8vw;
+    font-size: 15px;
+  }
+  .rate{
+    width: 9.5vw;
+  } 
+  .rate div{
+    width:4vw;
+    padding-left: 7px;
+  }
+  .moreButton{
+    width: 22vw;
+    font-size: 20px;
+  }
+  .wishButton, .contactBtn{
+    font-size: 14px;
+  }
+  .leftDetailsContainer, .rightDetailsContainer{
+    font-size: 16px;
+  }
+  .tap{
+    width: 15vw;
+  }
+  .sellerInfoTapsContainer {
+      width: 45vw;
+    }
+  .leftSellerDetailsContainer {
+      width: 16vw;
+    }
+  .leftSellerDetailsContainer img {
+      height: 7vh;
+      width: 9vw;
+  }
+  .rightSellerDetailsContainer {
+    width: 28vw;
+    height: 35vh;
+  }
+  .sellerContactInfo {
+      height: 15vh;
+  }
+}
+@media only screen and (max-width: 540px){
+  .rightDivContainer{
+    width: 50vw;
+  }
+  .PicAndDetails{
+    width: 41vw;
+  }
+  .relatedItemCar, .middleDiv{
+    width: 38vw;
+  }
+  .nameAndSuv{
+    width: 24.5vw;
+  }
+  .rate{
+    width:11.5vw;
+  } 
+  .rate div{
+    width: 5vw;
+    padding-left: 4px;
+  }
+  .moreButton{
+    width: 25vw;
+    font-size: 18px;
+  }
+  .smallDetailsContainer h3, .price{
+    font-size: 20px;
+  }
+  .Stars {
+    width: 30vw;
+  }
+  .wishButton, .contactBtn{
+    font-size: 10px;
+    height: 4vh;
+  }
+  .tap {
+    width: 16.7vw;
+  }
+  .tap_text{
+    font-size: 17px;
+  }
+  .descriptonTapsContainer{
+    font-size: 20px;
+  }
+  .detailsTapsContainer{
+    width: 55vw;
+  }
+  .leftDetailsContainer, .rightDetailsContainer{
+    font-size: 14px;
+  }
+  .sellerInfoTapsContainer {
+      width: 48vw;
+    }
+  .leftSellerDetailsContainer {
+      width: 14vw;
+    }
+  .leftSellerDetailsContainer h4{
+      font-size: 11px;
+    }
+  .leftSellerDetailsContainer p{
+      font-size: 10px;
+    }
+  .rightSellerDetailsContainer {
+    width: 33vw;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 415px){
+  .nameAndSuv{
+    width: 23.5vw;
+  }
+  .nameAndSuv h2{
+    font-size: 15px;
+  }
+  .nameAndSuv button{
+    width: 6.8vw;
+    font-size: 9px;
+  }
+  .rate{
+    width:13.5vw;
+  } 
+  .rate div{
+    width: 6vw;
+    padding-left: 0px;
+  }
+  .Stars {
+    width: 40vw;
+  }
+  .tap_text{
+    font-size: 14px;
+  }
+  .detailsTapsContainer{
+    width: 50vw;
+  }
+  .transmission  {
+    flex-direction: column;
+    height: 5vh;
+  }
+  .sellerInfoTapsContainer {
+      width: 50vw;
+    }
+  .leftSellerDetailsContainer {
+      width: 13vw;
+    }
+  .leftSellerDetailsContainer h4,.leftSellerDetailsContainer p{
+      font-size: 13px;
+    }
+  .rightSellerDetailsContainer {
+    width: 36vw;
+  }
+  .sellerContactInfo span {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 394px){
+  .leftDivContainer{
+      width: 38vw;
+  }
+  .rightDivContainer {
+    width: 57vw;
+  }
+  .choosedImg, .allImages {
+      width: 25vw;
+  }
+  .PicAndDetails {
+    width: 33vw;
+  }
+  .relatedItemCar{
+    height: 13vh;
+  }
+  .relatedItemCar, .middleDiv {
+    width: 25vw;
+  }
+  .middleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wishButton, .contactBtn {
+    font-size: 9px;
+    width: 20vw;
+  }
+  .tap {
+    width: 19vw;
+  }
+  .detailsTapsContainer {
+    width: 58vw;
+  }
+  .leftDetailsContainer{
+    width: 23vw;
+  }
+  .leftSellerDetailsContainer img {
+    height: 5vh;
+  }
+  .sellerInfoTapsContainer {
+    width: 55vw;
+  }
+  .rightSellerDetailsContainer {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 361px){
+  .sellerContactInfo span {
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 281px){
+  .nameAndNumber h2, .relatedItems h2{
+    font-size: 12px;
+  }
+  .nameAndSuv h2 {
+    font-size: 11px;
+}
+.rate div{
+  width: 7vw;
+}
+.moreButton{
+    font-size: 12px;
+}
+.smallDetailsContainer{
+  width: 25vw;
+}
+.Stars {
+  width: 53vw;
+}
+.tap_text {
+  font-size: 10px;
+}
+.detailsTapsContainer {
+  width: 55vw;
+}
+.leftDetailsContainer, .rightDetailsContainer {
+  font-size: 11px;
+}
+.leftSellerDetailsContainer h4, .leftSellerDetailsContainer p {
+  font-size: 8px;
+}
+.sellerContactInfo span {
+  font-size: 8px;
+}
+}

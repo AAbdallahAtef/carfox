@@ -5,7 +5,6 @@ import { MdFavorite, MdSettings, MdOutlineNotificationsActive, MdLogout } from "
 import {BsChatFill} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom';
 
-
 const Sidebar = ({children}) => {
     const menuItem=[
         {
@@ -51,7 +50,7 @@ const Sidebar = ({children}) => {
                     </div>
                     {
                         menuItem.map((item, index)=>(
-                            <NavLink to={item.path} key={index} className="link" activeclassName="active">
+                            <NavLink to={item.path} key={index} className="link">
                                 <div className="icon">{item.icon}</div>
                                 <div className="link_text">{item.name}</div>
                             </NavLink>
