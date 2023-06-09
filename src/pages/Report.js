@@ -26,10 +26,10 @@ export default function Notification() {
             <div className="reportForm">
                 <Formik
                     initialValues={{
-                        Email: "",
-                        FName: "",
-                        LName: "",
-                        phoneNumber: "",
+                        // Email: "",
+                        // FName: "",
+                        // LName: "",
+                        // phoneNumber: "",
                         theReport: "",
                     }}
                     onSubmit={onSubmit}

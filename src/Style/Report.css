@@ -27,16 +27,15 @@
     justify-content: space-between;
     transition: all 0.5s;
 }
-.reportDetails{
+/* .reportDetails{
     height:9vh;
     transition: all 0.5s;
-}
+} */
 .interiorField{
     height: 60vh;
 }
-.theReport{
-    height: 14vh;
-    transition: all 0.5s;
+.theReport textarea{
+    margin: 5px 0 5px 0;
 }
 .Sbutton{
     height: 4vh;
@@ -51,11 +50,17 @@
     .ReportLabel{
         font-size: 35px;
     }
-    .reportDetails label,.theReport label{
+    .theReport{
+        font-size: 17px;
+    }
+    .theReport label{
         font-size: 30px;
     }
-    .reportDetails input,.theReport input{
-        font-size: 20px;
+    .theReport textarea{
+        font-size: 25px;
+    }
+    .Sbutton{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 540px){
@@ -72,15 +77,14 @@
     .reportDetails label,.theReport label{
         font-size: 20px;
     }
-    .reportDetails input,.theReport input{
+    .reportDetails input,.theReport textarea{
         font-size: 15px;
     }
 }
-@media only screen and (max-width: 391px){
+@media only screen and (max-width: 394px){
     .containersForReport h1{
         font-size: 30px;
     }
-    
     .ReportLabel{
         font-size: 21px;
     }
@@ -93,7 +97,7 @@
     .reportDetails label,.theReport label{
         font-size: 18px;
     }
-    .reportDetails input,.theReport input{
+    .reportDetails input,.theReport textarea{
         font-size: 14px;
     }
 }
@@ -111,13 +115,10 @@
     .reportDetails label,.theReport label{
         font-size: 14px;
     }
-    .reportDetails input,.theReport input{
+    .reportDetails input,.theReport textarea{
         font-size: 13px;
     }
     .theReport input{
-        height: 16vh;
-    }
-    .theReport{
         height: 16vh;
     }
 }
