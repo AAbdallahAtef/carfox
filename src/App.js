@@ -11,6 +11,7 @@ import Sidebar from "./Component/Sidebar"
 import Report from "./pages/Report"
 import PicAndSlider from "./Component/picAndSlider"
 import ViewProduct from './pages/ViewProduct';
+import AboutUS from './pages/AboutUs';
 class App extends Component {
   
   render() {
@@ -34,7 +35,8 @@ class App extends Component {
         </BrowserRouter>
         <Report/>
           <PicAndSlider/> */}
-        <ViewProduct/>
+        {/* <ViewProduct/> */}
+        <AboutUS/>
       </div>
     )
   };
